@@ -68,5 +68,9 @@ public class Empregado {
 
     public void imprimir() {
         System.out.printf("\n" + "Nome: " + nome + "\n" + "Endereço: " + endereco + "\n" + "Salário: " + salario + "\n\n" + "Desconto IRPF: " + descIRPF + "\n" + "Desconto INSS: " + descINSS + "\n");
+
+        if (salario == 0) {
+            System.out.println("Cargo Inválido!");
+        }
     }
 }

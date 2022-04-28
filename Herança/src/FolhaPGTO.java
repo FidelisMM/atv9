@@ -6,7 +6,7 @@
 public class FolhaPGTO {
 
     public static void main(String args[]) {
-        Mensalista men1, men2;
+        Mensalista men1, men2, men3;
         Horista hora1, hora2;
 
         // Empregado mensalista
@@ -17,7 +17,7 @@ public class FolhaPGTO {
 
         men1.imprimir();
 
-        men2 = new Mensalista("Ana", "Rua Sem Fim", "Senior");
+        men2 = new Mensalista("Ana", "Rua sem Fim", "Senior");
         men2.calcularSalario();
         men2.calcularINSS();
         men2.calcularIRPF();
@@ -38,5 +38,12 @@ public class FolhaPGTO {
         hora2.calcularIRPF();
 
         hora2.imprimir();
+
+        men3 = new Mensalista("Pedro", "Rua sem Sáida", "Babá");
+        men3.calcularSalario();
+        men3.calcularINSS();
+        men3.calcularIRPF();
+
+        men3.imprimir();
     }
 }
